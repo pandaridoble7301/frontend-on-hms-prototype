@@ -1,0 +1,110 @@
+body {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO_NHjDqSDVz-bpdHRkthU7s7ve6K0xFobNg&s);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+ul {margin: 5px 0;
+    width:100%;
+    color:white;
+    text-align: left;
+    padding:20px;
+    background-color:green;
+
+}
+
+header {
+   margin: 5px 0;
+    width:100%;
+    background: #1916e3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    text-align: left;
+    font-size: 36px;
+    margin:10px;
+}
+
+ul {
+    color: black;
+    padding:20px;
+    list-style:circle;
+    text-align: left;
+}
+
+ ul li {
+    color:#000000;
+    display: inline;
+    margin-right: 5px;
+}
+
+ul li a { 
+    border: 10px;
+    margin: 10px;
+    padding:10px;
+    color:#000000;
+    text-decoration: unset;
+    font-size: 20px;
+}
+
+.admin-login {
+    
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-login h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+form {
+    width: 300px;
+    margin:0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6A1B9A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d459e;
+}
+
