@@ -1,4 +1,4 @@
-// Example validation or dynamic interaction
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
 
