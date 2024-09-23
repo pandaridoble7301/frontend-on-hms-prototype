@@ -1,4 +1,4 @@
-// Mock data for doctors and patients
+
 const doctors = [
     { name: 'Sravan Kumar', department: 'Allergists/Immunologists', mobile: '9390707891', status: 'Permanent' },
     { name: 'KiranKumar', department: 'Emergency Medicine Specialty', mobile: '7660984667', status: 'On Hold' },
@@ -14,14 +14,9 @@ const patients = [
     { name: 'Krishna', symptoms: 'Headche', mobile: '9493265478', status: 'Admitted' }
 ];
 
-
-
-
-
-// Function to dynamically load the data into the table
 function loadDoctors() {
     const doctorTable = document.querySelector('#doctor-table-body');
-    doctorTable.innerHTML = ''; // Clear previous data
+    doctorTable.innerHTML = ''; 
     doctors.forEach(doctor => {
         const row = `
             <tr>
@@ -37,7 +32,7 @@ function loadDoctors() {
 
 function loadPatients() {
     const patientTable = document.querySelector('#patient-table-body');
-    patientTable.innerHTML = ''; // Clear previous data
+    patientTable.innerHTML = ''; 
     patients.forEach(patient => {
         const row = `
             <tr>
@@ -50,15 +45,11 @@ function loadPatients() {
         patientTable.innerHTML += row;
     });
 }
-
-// Function to update dashboard numbers
 function updateDashboard() {
     document.querySelector('.doctor-card p').textContent = doctors.length;
     document.querySelector('.patient-card p').textContent = patients.length;
-    document.querySelector('.appointment-card p').textContent = 5; // Example hardcoded value
+    document.querySelector('.appointment-card p').textContent = 5; 
 }
-
-// Simulate new doctors and patients getting added
 function simulateNewData() {
     setTimeout(() => {
         doctors.push({ name: 'Dr.Omer Mohammed', department: 'Neurologists', mobile: '9874243210', status: 'Permanent' });
@@ -66,10 +57,10 @@ function simulateNewData() {
         loadDoctors();
         loadPatients();
         updateDashboard();
-    }, 5000); // Simulate data after 5 seconds
+    }, 5000); 
 }
 
-// Initialize the dashboard
+
 document.addEventListener('DOMContentLoaded', () => {
     loadDoctors();
     loadPatients();
